@@ -323,7 +323,7 @@ class MainWindow(QtGui.QWidget):
         if not filename:
             return
         # Если указан временный файл - ничего не делать
-        if filename == self._tmp_outfile:
+        if os.path.basename(filename) == self._tmp_outfile:
             return
         # Copy file to choosen destination
         shutil.copyfile(self._tmp_outfile, filename)
