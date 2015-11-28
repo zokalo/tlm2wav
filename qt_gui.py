@@ -384,6 +384,9 @@ class MainWindow(QtGui.QWidget):
         # Если не указан файл - пользователь отменил сохранение
         if not filename:
             return
+        # Если выбран пересохраняемый файл - ничего не нужно делать.
+        if os.path.basename(filename) == self._tmp_outfile:
+            return
         # Copy file to choosen destination
         shutil.copyfile(self._tmp_outfile, filename)
 
