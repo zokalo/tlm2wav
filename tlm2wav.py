@@ -11,7 +11,6 @@ import wave
 import math
 import struct
 import numpy as np
-# import scipy.interpolate
 import re
 import sys
 import os
@@ -673,6 +672,3 @@ if __name__ == '__main__':
     except Exception:
         print(sys.exc_info()[1])
         input()
-
-# ToDo: добавить чтение из EXCEL?
-# ToDo: использовать систему контроля версий
