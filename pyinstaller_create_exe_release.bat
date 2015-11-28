@@ -1,0 +1,1 @@
+pyinstaller --hidden-import=scipy.integrate -F --windowed qt_main.py
