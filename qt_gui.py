@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import SpanSelector
 import matplotlib
 import matplotlib.patches
-import sys
 import wave
 import struct
 import numpy as np

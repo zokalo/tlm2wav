@@ -1,24 +1,3 @@
-# Про setup и virtualenv
-# http://klen.github.io/create-python-packages.html
-# http://habrahabr.ru/post/127441/
-# http://root-inform.blogspot.ru/2013/03/python.html
-# http://www.8host.com/blog/obshhie-instrumenty-python/
-# wheel архивация с зависимостями
-# http://dizballanze.com/python/python-wheels-dlia-bystroi-ustanovki-zavisimostei/
-# ToDO: сделать установщик - версию оффлайн
-# ==========================================================
-# Убедитесь, что в вашей системе доступны setuptools,
-# в противном случае установите python-пакет distribute
-# ==========================================================
-# Узнать, какие пакеты установлены можно командой
-# $ pip freeze > packages.txt
-# ==========================================================
-# Этих операций достаточно, чтобы собрать пакет дистрибьюции.
-# Выполните команду сборки:
-#
-# $ python setup.py sdist
-
-import sys
 from setuptools import setup, find_packages
 from os.path import join, dirname
 
@@ -27,7 +6,6 @@ install_requires = [
     # 'PyQt4>=4.10.4',  # не устанавливается pip или easy_install!
     #  (его нельзя установить перечислив среди зависимостей здесь)
     'numpy>=1.9.2',
-    'pyaudio >= 0.2.7'
 ]
 
 setup(

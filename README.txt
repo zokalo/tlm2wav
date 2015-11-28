@@ -10,14 +10,13 @@ Installation:
 ============
 On your system must be installed:
   - python 3.X
-   - PyQt4 >= 4.10.4
+  - PyQt4 >= 4.10.4
 To install "tlm2wav" program:
   - open comand line in program directory
   - type in command line*:
         $ python setup.py install
     * the following modules will be downloaded from the internet:
        - 'matplotlib >= 1.4.3'
-       - 'PyAudio >= 0.2.7-2build2'
        - 'numpy      >= 1.9.2'
     If you have problems with modules installation, install their manually,
     using pip, easy_install or any other method.
