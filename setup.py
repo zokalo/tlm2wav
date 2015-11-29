@@ -16,7 +16,7 @@ install_requires = [
     'numpy>=1.9.2',
 ]
 
-VERSION = '0.1'
+VERSION = '1.0'
 
 setup(
     name='tlm2wav',
