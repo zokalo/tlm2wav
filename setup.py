@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Про setup и virtualenv
 # http://klen.github.io/create-python-packages.html
 # http://habrahabr.ru/post/127441/
@@ -19,8 +20,14 @@
 # $ python setup.py sdist
 
 import sys
-from setuptools import setup, find_packages
 from os.path import join, dirname
+from setuptools import setup, find_packages
+
+py_version = sys.version_info[:2]
+if py_version < (3, 0):
+    print('tlm2wav requires Python version 3.X' +
+          ' ({}.{} detected).'.format(*py_version))
+    sys.exit(-1)
 
 install_requires = [
     'matplotlib>=1.4.3',
@@ -30,14 +37,18 @@ install_requires = [
     'pyaudio >= 0.2.7'
 ]
 
+VERSION = '0.1'
+
 setup(
     name='tlm2wav',
-    version='0.1',
+    version=VERSION,
     author='Don Dmitriy Sergeevich',
     author_email='dondmitriys@gmail.com',
     url='https://github.com/zokalo/tlm2wav',
     description=
         'Problem-oriented program for converting text data to audiofile',
+    license='GPLv3.0',
+    platforms='GNU/Linux, Microsoft Windows', # (Mac OS X is not tested.)
     # список всех файлов одиночных модулей:
     py_modules=['qt_gui', 'tlm2wav'],
     # список файлов сценариев python
