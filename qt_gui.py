@@ -18,7 +18,7 @@ import shutil
 import os
 import time
 from PyQt4 import QtGui, QtCore
-from tlm2wav import Telemetry, LEFT, RIGHT, META, CALIB, TIME
+from tlm2wav_utils import Telemetry, LEFT, RIGHT, META, CALIB, TIME
 import pyaudio
 import threading
 import enum
