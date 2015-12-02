@@ -31,7 +31,7 @@ setup(
     # список всех файлов одиночных модулей:
     py_modules=['qt_gui', 'tlm2wav'],
     # список файлов сценариев python
-    scripts=['qt_main.py'],
+    scripts=['tlm2wav.pyw'],
     # список всех каталогов-модулей python (пакетов)
     packages=find_packages(),
     # список зависимостей от сторонних пакетов

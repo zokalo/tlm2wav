@@ -643,7 +643,7 @@ def main():
     else:
         print("Wrong args. Example of using:")
         print(
-            "$ python tlm2wav.py source.txt destination.wav 200 [1 or 2 or 3]")
+            "$ python tlm2wav_utils.py source.txt destination.wav 200 [1 or 2 or 3]")
         print("\t200 - optional argument: multiplier"
               "\n\t[1 or 2 or 3] - optional arguments."
               "\n\t1 - use LEFT hand data."

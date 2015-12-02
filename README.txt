@@ -6,6 +6,11 @@ Telemetric data must be stored in *.txt file, obtained from program
 "SKB IS SKIF" (http://www.skbis.ru/). Data can be recorded from three angular
 movement transducer "LIR": two for data registering, one - reserved.
 
+To start application GUI you can use command:
+$ python tlm2wav.pyw
+Also you can use command-line interface:
+$ python tlm2wav_utils.py
+
 INSTALLATION
 ============
 On your system must be installed:

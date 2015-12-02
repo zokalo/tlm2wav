@@ -16,7 +16,7 @@ import numpy as np
 import shutil
 import os
 from PyQt4 import QtGui, QtCore
-from tlm2wav import Telemetry, LEFT, RIGHT, META, CALIB, TIME
+from tlm2wav_utils import Telemetry, LEFT, RIGHT, META, CALIB, TIME
 
 __author__ = 'Don D.S.'
 
