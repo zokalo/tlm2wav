@@ -15,12 +15,8 @@ import struct
 import numpy as np
 import shutil
 import os
-import time
 from PyQt4 import QtGui, QtCore
 from tlm2wav import Telemetry, LEFT, RIGHT, META, CALIB, TIME
-import pyaudio
-import threading
-import enum
 
 __author__ = 'Don D.S.'
 
