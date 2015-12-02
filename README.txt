@@ -26,7 +26,7 @@ To install "tlm2wav" program:
     If you have problems with modules installation, install their manually,
     using pip, easy_install or any other method.
 --------------------------------------------------------------------------------
-Sources includes two bat-scenarios for Windows for generatig portable EXE
+Sources includes two bat-scenarios for Windows for generating portable EXE
 version of program:
 - pyinstaller_create_exe_debug.bat;
 - pyinstaller_create_exe_release.bat.
